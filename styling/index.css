@@ -1,0 +1,7 @@
+@import url('./template.css');
+
+.profile_picture img {
+    border-radius: 70%;
+    width: 80px;
+    height: 80px;
+}
