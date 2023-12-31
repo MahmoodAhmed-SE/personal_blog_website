@@ -1,0 +1,13 @@
+@import url('./font-rules.css');
+
+/* Overall look css rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Medium, sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+}
