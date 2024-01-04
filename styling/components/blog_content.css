@@ -31,7 +31,7 @@ content img {
 @media (max-width: 900px) {
     content {
         background-color: #1a3e47;
-        width: 100%;
+        width: 100vw;
         padding: 30px 20px;
         text-align: center;
         display: grid;
@@ -57,14 +57,7 @@ content img {
     content img {
         margin: auto;
         grid-area: blog_image;
-        width: 300px;
-        height: 300px;
-    }
-}
-
-
-@media (min-width: 901px) {
-    content {
-
+        width: 60vw;
+        height: 60vh;
     }
 }

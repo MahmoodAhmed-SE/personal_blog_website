@@ -10,6 +10,7 @@ header {
     font-size: 45px;
 }
 
+
 header nav {
     width: 800px;
     height: 70px;
@@ -19,6 +20,7 @@ header nav {
 header nav ul {
     height: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
     gap: 30px;
@@ -48,51 +50,49 @@ header nav ul li a:hover {
     transition: 500ms;
 }
 
+.profile_picture img {
+    border-radius: 70%;
+    width: 80px;
+    height: 80px;
+}
 
 @media (max-width: 900px) {
     #logo {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     header nav {
         width: 100vw;
-        height: 70px;
-        padding: 10px;
+        height: 110px;
+        padding: 5px;
     }
 
     
     header nav ul {
-        height: 100%;
-        display: flex;
-        justify-content: start;
+        flex-direction: column;
         gap: 5px;
     }
     
     header nav ul li {
         background-color: transparent;
-        width: 100px;
-        list-style: none;
-        text-align: center;
     }
 
     header nav ul li a {
         background-color: transparent;
         color: #333333;
-        display: inline-block;
-        padding-top: 10px;
         font-size: 1em;
-        text-decoration: none;
     }
 
     header nav ul li a:hover {
         background-color: transparent;
-        transition: 500ms;
+        transition: none;
+    }
+
+    .profile_picture img {
+        border-radius: 70%;
+        width: 60px;
+        height: 60px;
     }
 }
 
 
-@media (min-width: 901px) {
-    content {
-
-    }
-}

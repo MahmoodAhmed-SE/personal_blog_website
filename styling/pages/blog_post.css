@@ -1,0 +1,50 @@
+@import url("../theme/template.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+
+
+
+main {
+    margin: 10px auto;
+    width: 95vw;
+    min-height: 500px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    box-shadow: inset white 0 0 50px 10px;
+    display: grid;
+    grid-template-areas: "pheader pheader" 
+    "post post"
+    "pimage pimage";
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.post-header {
+    grid-area: pheader;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.post-para {
+    grid-area: post;
+    text-align: left;
+}
+.post-img {
+    grid-area: pimage;
+
+    height: 100%;
+    width: 100%;
+}
+
+@media (min-width: 700px) { 
+    main { 
+        grid-template-areas: "pheader pheader" 
+        "post pimage"
+        "post pimage";
+    }
+    .post-img {  
+        height: 300px;
+        width: unset;
+    }
+}

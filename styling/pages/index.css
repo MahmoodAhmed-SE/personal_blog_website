@@ -1,0 +1,28 @@
+@import url("../theme/template.css");
+@import url("../components/header.css");
+@import url("../components/aside_bar.css");
+@import url("../components/blog_content.css");
+@import url("../components/footer.css");
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 901px) {
+    main {
+        height: 80vh;
+    }
+}
