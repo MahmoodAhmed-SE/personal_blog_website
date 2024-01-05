@@ -12,9 +12,10 @@ main {
     background-color: aliceblue;
     box-shadow: inset white 0 0 50px 10px;
     display: grid;
-    grid-template-areas: "pheader pheader" 
-    "post post"
-    "pimage pimage";
+    grid-template-areas: "pheader pheader"
+        "post post"
+        "pimage pimage"
+        "social_sharing social_sharing";
     text-align: center;
     gap: 20px;
     padding: 10px;
@@ -26,25 +27,63 @@ main {
     text-align: center;
     padding-bottom: 10px;
 }
+
 .post-para {
     grid-area: post;
     text-align: left;
 }
-.post-img {
+
+.image_figure {
+    margin: auto;
     grid-area: pimage;
 
-    height: 100%;
-    width: 100%;
 }
 
-@media (min-width: 700px) { 
-    main { 
-        grid-template-areas: "pheader pheader" 
-        "post pimage"
-        "post pimage";
+.image_figure img {
+    width: 300px;
+    height: 300px;
+}
+
+.social_sharing {
+    grid-area: social_sharing;
+    margin: auto;
+}
+
+.social_sharing h4 {
+    padding-bottom: 20px;
+}
+
+.social_sharing ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.social_sharing ul li {
+    list-style: none;
+}
+.social_sharing ul li img {
+    cursor: pointer;
+    width: 40px;
+    height: 40px
+}
+
+
+
+@media (min-width: 700px) {
+    main {
+        grid-template-areas: "pheader pheader"
+            "post pimage"
+            "post pimage"
+            "social_sharing social_sharing";
     }
-    .post-img {  
-        height: 300px;
-        width: unset;
+
+    .post-para {
+        width: 60vw;
+    }
+
+    .image_figure img {
+        width: 30vw;
+        height: unset;
     }
 }

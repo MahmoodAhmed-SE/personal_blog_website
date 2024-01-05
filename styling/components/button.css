@@ -1,0 +1,13 @@
+button {
+    background-color: deepskyblue;
+    width: 120px; 
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    font-size: medium;
+}
+
+
+button:active {
+    background-color: rgb(1, 142, 189);
+}
